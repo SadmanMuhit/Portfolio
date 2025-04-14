@@ -7,7 +7,7 @@ const Banner = () => {
     <section className='bg-banbg p-[60px]'>
         <div className="container m-auto text-left">
           <div>
-            <img src="/banner.jpg" alt="banner-image" className='float-right rounded-2xl bg-imagebg p-3'/>
+            <img src="/banner.jpg" alt="banner-image" className='float-right rounded-2xl bg-imagebg p-3 w-[400px] h-[400px]'/>
           </div>
             <h1 className='font-poppins text-6xl'>Hi,i'm Muhit
            <span className='block text-text font-bold text-6xl'>Front End</span>

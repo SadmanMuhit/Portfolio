@@ -4,13 +4,13 @@ const Aboutme = () => {
   return (
    <section>
     <div className='container m-auto'>
-        <h3 className='text-3xl font-bold font-poppins text-black mt-20 text-center mb-[60px]'>About Me</h3>
-        <div className='float-left'>
-            <img src="/Muhit.jpeg" alt="" className='w-[400px] h-[400px]' />
-        </div>
-        <div className='text-right'>
-            <p className='font-poppins font-bold text-2xl text-blue-50 mt-28'>A passionate developer with 5+ years of experience</p>
-            <p className='font-poppins leading-relaxed mr-12'>I specialize in building exceptional digital experiences that are fast, accessible, and visually appealing. With expertise in both frontend and backend development, I create scalable solutions that drive business growth.</p>
+        <h4 className='font-poppins text-3xl font-bold text-center mt-20'>About Me</h4>
+      <div>
+          <img src="/about.jpg" alt="" className='mt-[60px] float-left mr-12 rounded-2xl w-[400px] h-[400px]' />
+      </div>
+        <div className='mt-[109px] ml-5'>
+        <p className='text-2xl font-poppins font-bold text-blue-50'>A passionate developer with 1+ years of <br /> experience</p>
+        <p className='text-base font-poppins font-normal mt-16 pb-[186px]'>I'm Sadman Muhit, I'm final year student diploma in engineering. i'm a passionate learning and always willing to learn and work across technologies. I love to explore new technologies and try to solve real life problems. Apart form that I also love to guid and mentor newbies. I'm currently into Front end development and working and machine learning.</p>
         </div>
     </div>
    </section>
