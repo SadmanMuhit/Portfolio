@@ -7,7 +7,7 @@ const Navbar = () => {
         <a href="#" className='text-blue-50 font-poppins text-2xl font-bold'>SSMuhit</a>
         <ul className='flex gap-8 font-poppins font-normal text-[14px]'> 
           <li><a href="#">Home</a></li>
-          <li><a href="#Aboutme">About</a></li>
+          <li><a href="#">About</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Skills</a></li>
           <li><a href="#">Contact</a></li>

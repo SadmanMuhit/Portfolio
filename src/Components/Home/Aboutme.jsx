@@ -8,8 +8,9 @@ const Aboutme = () => {
         <div className='float-left'>
             <img src="/Muhit.jpeg" alt="" className='w-[400px] h-[400px]' />
         </div>
-        <div>
-
+        <div className='text-right'>
+            <p className='font-poppins font-bold text-2xl text-blue-50 mt-28'>A passionate developer with 5+ years of experience</p>
+            <p className='font-poppins leading-relaxed mr-12'>I specialize in building exceptional digital experiences that are fast, accessible, and visually appealing. With expertise in both frontend and backend development, I create scalable solutions that drive business growth.</p>
         </div>
     </div>
    </section>
