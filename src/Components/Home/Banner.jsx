@@ -19,9 +19,9 @@ const Banner = () => {
            <button className=' hover:bg-bg duration-300 hover:text-white border-2 border-border py-2 px-6  rounded-full'>View Work</button> 
            </div>
            <div className='mt-8 flex gap-6 text-2xl'>
-              <FaGithub />
-              <FaLinkedin />
-              <BsTwitterX />
+              <a href="#"><FaGithub /></a>
+              <a href="#"><FaLinkedin /></a>
+              <a href="#"><BsTwitterX /></a>
            </div>
         </div>
     </section>
