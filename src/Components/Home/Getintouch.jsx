@@ -5,7 +5,7 @@ const Getintouch = () => {
     <section>
       <div className='container m-auto'>
         <div className='bg-skill flex items-center justify-center py-12 px-4'>
-          <div className='bg-white rounded-xl shadow-lg w-full max-w-2xl p-8 space-y-6'>
+          <div className='bg-white rounded-2xl shadow-lg w-full max-w-2xl p-8 space-y-6'>
             <h2 className='text-center font-bold font-poppins text-3xl'>Get In Touch</h2>
             <form action="#" className='space-y-4'>
              <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
