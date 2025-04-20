@@ -4,7 +4,7 @@ import { FaTools } from "react-icons/fa";
 const Skills = () => {
   return (
     <section>
-        <div className='container m-auto'>
+        <div className='container m-auto mb-20'>
             <h3 className='text-3xl font-bold font-poppins text-center mt-[75px] mb-[60px]'>Skills & Expertise</h3>
             <div className='grid grid-cols-2'>
                 <div className='flex gap-8'>
