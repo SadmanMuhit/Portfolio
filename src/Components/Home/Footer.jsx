@@ -2,10 +2,11 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='bg-b'>
+   <footer className='bg-footer'>
 
-    </footer>
+   </footer>
   )
 }
 
 export default Footer
+
