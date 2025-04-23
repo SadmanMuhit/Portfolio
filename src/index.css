@@ -13,3 +13,6 @@
     --color-footer:#111827;
     --font-poppins: "Poppins", "sans-serif";
 }
+html{
+    scroll-behavior: smooth;
+}
