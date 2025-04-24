@@ -323,7 +323,7 @@ const Singlepage = () => {
                   <label htmlFor="#" className="block">
                     Message
                   </label>
-                  <input className="w-full py-10 px-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 mt-2"></input>
+                  <textarea className="w-full py-10 px-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 mt-2"></textarea>
                 </div>
                 <div>
                   <button className="w-full bg-bg rounded-lg py-2 text-white text-base font-poppins font-normal mt-6">
