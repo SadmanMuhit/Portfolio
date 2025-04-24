@@ -5,6 +5,7 @@ import { FaTools } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import { FaInstagram } from "react-icons/fa";
 import { HashLink as Link } from "react-router-hash-link";
 const Singlepage = () => {
   return (
@@ -64,7 +65,7 @@ const Singlepage = () => {
             <button className="hover:bg-bg text-[16px] border border-border font-normal py-2 px-6 rounded-full hover:text-white shadow duration-300">
               Contact Me
             </button>
-            <button  className=" hover:bg-bg duration-300 hover:text-white border-2 border-border py-2 px-6  rounded-full">
+            <button className=" hover:bg-bg duration-300 hover:text-white border-2 border-border py-2 px-6  rounded-full">
               View Work
             </button>
           </div>
@@ -72,10 +73,13 @@ const Singlepage = () => {
             <Link target="_blank" to="https://github.com/SadmanMuhit">
               <FaGithub />
             </Link>
-            <Link target="_blank" to="https://www.linkedin.com/in/sadman-muhit-bb354a346/">
+            <Link
+              target="_blank"
+              to="https://www.linkedin.com/in/sadman-muhit-bb354a346/"
+            >
               <FaLinkedin />
             </Link>
-            <Link target="_blank"  to="https://x.com/sadman_muhit">
+            <Link target="_blank" to="https://x.com/sadman_muhit">
               <BsTwitterX />
             </Link>
           </div>
@@ -121,7 +125,7 @@ const Singlepage = () => {
               Featured Projects
             </h2>
           </div>
-          <div className="grid grid-cols-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             <div className="flex gap-8 mt-[60px] mb-20">
               <div className="image4">
                 <img
@@ -308,7 +312,7 @@ const Singlepage = () => {
                 </div>
                 <div>
                   <label htmlFor="#" className="block">
-                    subject
+                    Subject
                   </label>
                   <input
                     type="text"
@@ -317,9 +321,9 @@ const Singlepage = () => {
                 </div>
                 <div>
                   <label htmlFor="#" className="block">
-                    message
+                    Message
                   </label>
-                  <input className="w-full py-10 px-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"></input>
+                  <input className="w-full py-10 px-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 mt-2"></input>
                 </div>
                 <div>
                   <button className="w-full bg-bg rounded-lg py-2 text-white text-base font-poppins font-normal mt-6">
@@ -334,7 +338,41 @@ const Singlepage = () => {
       {/* Get in touch end */}
 
       {/* Footer start */}
-      <footer className="bg-footer py-16"></footer>
+      <footer className="bg-footer py-16">
+        <div className="container m-auto flex justify-between">
+          <div>
+            <Link to="/" className="font-poppins font-bold text-2xl text-white">
+              SSMuhit
+            </Link>
+            <p className="font-poppins text-base text-textfooter mt-5 ">
+              Creating innovative web solutions that help businesses <br />{" "}
+              thrive in the digital world.
+            </p>
+          </div>
+          <div>
+            <div className="flex gap-6 text-2xl text-white justify-end">
+              <Link target="_blank" to="https://github.com/SadmanMuhit">
+                <FaGithub />
+              </Link>
+              <Link
+                target="_blank"
+                to="https://www.linkedin.com/in/sadman-muhit-bb354a346/"
+              >
+                <FaLinkedin />
+              </Link>
+              <Link target="_blank" to="https://x.com/sadman_muhit">
+                <BsTwitterX />
+              </Link>
+              <Link target="_blank" to="https://x.com/sadman_muhit">
+              <FaInstagram />
+              </Link>
+            </div>
+            <p className="font-poppins font-normal text-base text-textfooter mt-6">
+              © 2025 James.dev. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
 
       {/* Footer end */}
     </>
