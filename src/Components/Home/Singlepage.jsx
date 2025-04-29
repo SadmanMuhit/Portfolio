@@ -6,6 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
+import { FaBars } from "react-icons/fa6";
 import { HashLink as Link } from "react-router-hash-link";
 const Singlepage = () => {
   return (
@@ -16,7 +17,7 @@ const Singlepage = () => {
           <Link to="/" className="text-blue-50 font-poppins text-2xl font-bold">
             SSMuhit
           </Link>
-          <ul className="flex gap-8 font-poppins font-normal text-[14px]">
+          <ul className="gap-8 font-poppins font-normal text-[14px] hidden md:flex">
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -36,7 +37,19 @@ const Singlepage = () => {
           <button className="bg-bg pt-2 pb-2 pr-5 pl-5 rounded-full text-white text-[16px]">
             Hire Me
           </button>
+          <div className="md:hidden">
+            <button id="menu-btn"  className="text-black focus:outline-none">
+            <FaBars />
+              </button> 
+          </div>
         </div>
+        <ul className="md:hidden fixed text-black mt-2 space-y-2 hidden" id="menu">
+          <li><Link to="/" className="block px-4 py-2 text-black hover:bg-gray-100">Home</Link></li>
+          <li><Link to="#About" className="block px-4 py-2 text-black hover:bg-gray-100">About</Link></li>
+          <li><Link to="#Project" className="block px-4 py-2 text-black hover:bg-gray-100">Projects</Link></li>
+          <li><Link to="#Skill" className="block px-4 py-2 text-black hover:bg-gray-100">Skills</Link></li>
+          <li><Link to="#Getintouch" className="block px-4 py-2 text-black hover:bg-gray-100">Contact</Link></li>
+        </ul>
       </nav>
       {/* Navbar end */}
 
