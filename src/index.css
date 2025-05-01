@@ -16,4 +16,5 @@
 }
 html{
     scroll-behavior: smooth;
+    transition-duration: 1s;
 }
