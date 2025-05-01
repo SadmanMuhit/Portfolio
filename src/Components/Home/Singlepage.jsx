@@ -154,7 +154,7 @@ const Singlepage = () => {
                   alt=""
                   className=" rounded-tr-[60px] rounded-tl-[60px]"
                 />
-                <div className="bg-white p-6 rounded-b-2xl rounded-bl-2xl ">
+                <div className="bg-white p-4 rounded-b-2xl rounded-bl-2xl ">
                   <h6 className="text-[20px] font-bold font-poppins">
                     kraft project
                   </h6>
@@ -189,7 +189,7 @@ const Singlepage = () => {
                   alt=""
                   className="rounded-tr-[60px] rounded-tl-[60px]"
                 />
-                <div className="bg-white p-6 rounded-b-2xl rounded-bl-2xl">
+                <div className="bg-white p-4 rounded-b-2xl rounded-bl-2xl">
                   <h6 className="text-[20px] font-bold font-poppins">
                     kraft project
                   </h6>
@@ -224,7 +224,7 @@ const Singlepage = () => {
                   alt=""
                   className=" rounded-tr-[60px] rounded-tl-[60px]"
                 />
-                <div className="bg-white p-6 rounded-b-2xl rounded-bl-2xl">
+                <div className="bg-white p-4 rounded-b-2xl rounded-bl-2xl">
                   <h6 className="text-[20px] font-bold font-poppins">
                     kraft project
                   </h6>
@@ -259,7 +259,7 @@ const Singlepage = () => {
                   alt=""
                   className=" rounded-tr-[60px] rounded-tl-[60px]"
                 />
-                <div className="bg-white p-6 rounded-b-2xl rounded-bl-2xl">
+                <div className="bg-white p-4 rounded-b-2xl rounded-bl-2xl">
                   <h6 className="text-[20px] font-bold font-poppins">
                     kraft project
                   </h6>
