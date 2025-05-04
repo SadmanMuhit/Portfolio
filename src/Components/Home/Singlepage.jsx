@@ -41,7 +41,7 @@ const Singlepage = () => {
           <div className="md:hidden">
             <button
               id="menu-btn"
-              onClick={toggleMenu}
+              onClick="toggleMenu()"
               className="text-black focus:outline-none"
             >
               <FaBars id="icon-show" />
@@ -56,7 +56,7 @@ const Singlepage = () => {
           <li>
             <Link
               to="/"
-              onClick={toggleMenu}
+              onClick="toggleMenu()"
               className="block px-4 py-2 text-black hover:bg-gray-100"
             >
               Home
@@ -65,7 +65,7 @@ const Singlepage = () => {
           <li>
             <Link
               to="#About"
-              onClick={toggleMenu}
+              onClick="toggleMenu()"
               className="block px-4 py-2 text-black hover:bg-gray-100"
             >
               About
@@ -74,7 +74,7 @@ const Singlepage = () => {
           <li>
             <Link
               to="#Project"
-              onClick={toggleMenu}
+              onClick="toggleMenu()"
               className="block px-4 py-2 text-black hover:bg-gray-100"
             >
               Projects
@@ -83,7 +83,7 @@ const Singlepage = () => {
           <li>
             <Link
               to="#Skill"
-              onClick={toggleMenu}
+              onClick="toggleMenu()"
               className="block px-4 py-2 text-black hover:bg-gray-100"
             >
               Skills
@@ -92,7 +92,7 @@ const Singlepage = () => {
           <li>
             <Link
               to="#Getintouch"
-              onClick={toggleMenu}
+              onClick="toggleMenu()"
               className="block px-4 py-2 text-black hover:bg-gray-100"
             >
               Contact
