@@ -35,22 +35,69 @@ const Singlepage = () => {
               <Link to="#Getintouch">Contact</Link>
             </li>
           </ul>
-          <button className="bg-bg pt-2 pb-2 pr-5 pl-5 rounded-full text-white text-[16px] md:block hidden"> 
+          <button className="bg-bg pt-2 pb-2 pr-5 pl-5 rounded-full text-white text-[16px] md:block hidden">
             Hire Me
           </button>
           <div className="md:hidden">
-            <button id="menu-btn" onClick={toggleMenu} className="text-black focus:outline-none">
-            <FaBars id="icon-show"/>
-            <IoMdClose id="icon-close" className="hidden"/>
-              </button> 
+            <button
+              id="menu-btn"
+              onClick={toggleMenu}
+              className="text-black focus:outline-none"
+            >
+              <FaBars id="icon-show" />
+              <IoMdClose id="icon-close" className="hidden" />
+            </button>
           </div>
         </div>
-        <ul className="md:hidden fixed text-black bg-white w-full space-y-2 hidden pb-2" id="menu">
-          <li><Link to="/" onClick={toggleMenu} className="block px-4 py-2 text-black hover:bg-gray-100">Home</Link></li>
-          <li><Link to="#About" onClick={toggleMenu} className="block px-4 py-2 text-black hover:bg-gray-100">About</Link></li>
-          <li><Link to="#Project" onClick={toggleMenu} className="block px-4 py-2 text-black hover:bg-gray-100">Projects</Link></li>
-          <li><Link to="#Skill" onClick={toggleMenu} className="block px-4 py-2 text-black hover:bg-gray-100">Skills</Link></li>
-          <li><Link to="#Getintouch" onClick={toggleMenu} className="block px-4 py-2 text-black hover:bg-gray-100">Contact</Link></li>
+        <ul
+          className="md:hidden fixed text-black bg-white w-full space-y-2 hidden pb-2"
+          id="menu"
+        >
+          <li>
+            <Link
+              to="/"
+              onClick={toggleMenu}
+              className="block px-4 py-2 text-black hover:bg-gray-100"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#About"
+              onClick={toggleMenu}
+              className="block px-4 py-2 text-black hover:bg-gray-100"
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#Project"
+              onClick={toggleMenu}
+              className="block px-4 py-2 text-black hover:bg-gray-100"
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#Skill"
+              onClick={toggleMenu}
+              className="block px-4 py-2 text-black hover:bg-gray-100"
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#Getintouch"
+              onClick={toggleMenu}
+              className="block px-4 py-2 text-black hover:bg-gray-100"
+            >
+              Contact
+            </Link>
+          </li>
           <button className="bg-bg pt-2 pb-2 pr-5 pl-5 rounded-full text-white text-[16px]">
             Hire Me
           </button>
@@ -59,49 +106,50 @@ const Singlepage = () => {
       {/* Navbar end */}
 
       {/* Banner start */}
-      <section className="bg-banbg p-[60px] sm:px-[60px] px-4" id="Banner">
-        <div className="container m-auto text-left">
-          <div className=" justify-between items-center">
-            <img
-              src="/banner.jpg"
-              alt="banner-image"
-              className="float-right rounded-2xl bg-imagebg p-3  h-[400px] w-[400px]"
-            />
-          </div>
-          <div className="w-full"> 
-          <h1 className="font-poppins text-4xl">
-            Hi,i'm Muhit
-            <span className="block text-text font-bold text-6xl">
-              Front End
-            </span>
-            <span className="text-text font-bold text-6xl">Developer</span>
-          </h1>
-          </div>
-          <p className="font-normal text-[20px] text-p mt-6 md:mt-10">
-            I create beautiful and functional websites that help <br />
-            businesses grow and succeed online.
-          </p>
-          <div className="flex gap-4 mt-10">
-            <button className="hover:bg-bg text-[16px] border border-border font-normal py-2 px-6 rounded-full hover:text-white shadow duration-300">
-              Contact Me
-            </button>
-            <button className=" hover:bg-bg duration-300 hover:text-white border-2 border-border py-2 px-6  rounded-full">
-              View Work
-            </button>
-          </div>
-          <div className="mt-8 flex gap-6 text-2xl ">
-            <Link target="_blank" to="https://github.com/SadmanMuhit">
-              <FaGithub />
-            </Link>
-            <Link
-              target="_blank"
-              to="https://www.linkedin.com/in/sadman-muhit-bb354a346/"
-            >
-              <FaLinkedin />
-            </Link>
-            <Link target="_blank" to="https://x.com/sadman_muhit">
-              <BsTwitterX />
-            </Link>
+      <section className="bg-banbg py-12 px-4 sm:px-[60px]" id="Banner">
+        <div className="container mx-auto max-w-7xl">
+          <div className="flex flex-col-reverse lg:flex-row items-center lg:justify-between gap-10">
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
+              <h1 className="font-poppins text-4xl md:text-5xl lg:text-6xl">
+                Hi, I'm Muhit
+                <span className="block text-text font-bold">Front End</span>
+                <span className="text-text font-bold">Developer</span>
+              </h1>
+              <p className="font-normal text-lg md:text-xl text-p mt-6 md:mt-10">
+                I create beautiful and functional websites that help{" "}
+                <br className="hidden md:block" />
+                businesses grow and succeed online.
+              </p>
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-10">
+                <button className="hover:bg-bg text-[16px] border border-border font-normal py-2 px-6 rounded-full hover:text-white shadow duration-300">
+                  Contact Me
+                </button>
+                <button className="hover:bg-bg duration-300 hover:text-white border-2 border-border py-2 px-6 rounded-full">
+                  View Work
+                </button>
+              </div>
+              <div className="mt-8 flex justify-center lg:justify-start gap-6 text-2xl">
+                <Link target="_blank" to="https://github.com/SadmanMuhit">
+                  <FaGithub />
+                </Link>
+                <Link
+                  target="_blank"
+                  to="https://www.linkedin.com/in/sadman-muhit-bb354a346/"
+                >
+                  <FaLinkedin />
+                </Link>
+                <Link target="_blank" to="https://x.com/sadman_muhit">
+                  <BsTwitterX />
+                </Link>
+              </div>
+            </div>
+            <div className="w-full lg:w-1/2 flex justify-center">
+              <img
+                src="/banner.jpg"
+                alt="banner-image"
+                className="rounded-2xl bg-imagebg p-3 h-[300px] w-[300px] md:h-[400px] md:w-[400px] object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -111,29 +159,29 @@ const Singlepage = () => {
       <section id="About" className="md:px-[60px] sm:px-[60px] px-4">
         <div className="container m-auto">
           <div>
-          <h4 className="font-poppins text-3xl font-bold text-center mt-20">
-            About Me
-          </h4>
-          <div>
-            <img
-              src="/about.jpg"
-              alt=""
-              className="mt-[60px] float-left mr-12 rounded-2xl w-[400px] h-[400px]"
-            />
-          </div>
-          <div className="mt-[109px] ml-5 ">
-            <p className="text-2xl font-poppins font-bold text-blue-50">
-              A passionate developer with 1+ years of <br /> experience
-            </p>
-            <p className="text-base font-poppins font-normal mt-16 pb-[186px]">
-              I'm Sadman Muhit, I'm final year student diploma in engineering.
-              i'm Link passionate learning and always willing to learn and work
-              across technologies. I love to explore new technologies and try to
-              solve real life problems. Apart form that I also love to guid and
-              mentor newbies. I'm currently into Front end development and
-              working and machine learning.
-            </p>
-          </div>
+            <h4 className="font-poppins text-3xl font-bold text-center mt-20">
+              About Me
+            </h4>
+            <div>
+              <img
+                src="/about.jpg"
+                alt=""
+                className="mt-[60px] float-left mr-12 rounded-2xl w-[400px] h-[400px]"
+              />
+            </div>
+            <div className="mt-[109px] ml-5 ">
+              <p className="text-2xl font-poppins font-bold text-blue-50">
+                A passionate developer with 1+ years of <br /> experience
+              </p>
+              <p className="text-base font-poppins font-normal mt-16 pb-[186px]">
+                I'm Sadman Muhit, I'm final year student diploma in engineering.
+                i'm Link passionate learning and always willing to learn and
+                work across technologies. I love to explore new technologies and
+                try to solve real life problems. Apart form that I also love to
+                guid and mentor newbies. I'm currently into Front end
+                development and working and machine learning.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -147,189 +195,181 @@ const Singlepage = () => {
               Featured Projects
             </h2>
           </div>
-            <div className="gap-8 mt-[60px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-20">
-              <div className="image4 ">
-                <img
-                  src="/project.png"
-                  alt=""
-                  className=" rounded-tr-[60px] rounded-tl-[60px]"
-                />
-                <div className="bg-white p-4 rounded-b-2xl rounded-bl-2xl ">
-                  <h6 className="text-[20px] font-bold font-poppins">
-                    kraft project
-                  </h6>
-                  <p className="text-base font-normal font-poppins mt-3">
-                    A creative studio Product website and home page
+          <div className="gap-8 mt-[60px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-20">
+            <div className="image4 ">
+              <img
+                src="/project.png"
+                alt=""
+                className=" rounded-tr-[60px] rounded-tl-[60px]"
+              />
+              <div className="bg-white p-4 rounded-b-2xl rounded-bl-2xl ">
+                <h6 className="text-[20px] font-bold font-poppins">
+                  kraft project
+                </h6>
+                <p className="text-base font-normal font-poppins mt-3">
+                  A creative studio Product website and home page
+                </p>
+                <div className="flex text-[12px] text-text mt-7 gap-2 mb-4">
+                  <p className="bg-textbg py-1 px-3 rounded-full">HTML & CSS</p>
+                  <p className="bg-textbg py-1 px-3 rounded-full">
+                    Tailwind Css
                   </p>
-                  <div className="flex text-[12px] text-text mt-7 gap-2 mb-4">
-                    <p className="bg-textbg py-1 px-3 rounded-full">
-                      HTML & CSS
-                    </p>
-                    <p className="bg-textbg py-1 px-3 rounded-full">
-                      Tailwind Css
-                    </p>
-                    <p className="bg-textbg py-1 px-3 rounded-full">React</p>
-                  </div>
-                  <div>
-                    <Link
-                      to="#"
-                      className="text-text inline-flex items-center hover:underline"
-                    >
-                      View Project
-                      <span className="ml-1">
-                        <IoIosArrowRoundForward />
-                      </span>
-                    </Link>
-                  </div>
+                  <p className="bg-textbg py-1 px-3 rounded-full">React</p>
                 </div>
-              </div>
-              <div className="image4">
-                <img
-                  src="/project.png"
-                  alt=""
-                  className="rounded-tr-[60px] rounded-tl-[60px]"
-                />
-                <div className="bg-white p-4 rounded-b-2xl rounded-bl-2xl">
-                  <h6 className="text-[20px] font-bold font-poppins">
-                    kraft project
-                  </h6>
-                  <p className="text-base font-normal font-poppins mt-3">
-                    A creative studio Product website and home page
-                  </p>
-                  <div className="flex text-[12px] text-text mt-7 gap-2 mb-4">
-                    <p className="bg-textbg py-1 px-3 rounded-full">
-                      HTML & CSS
-                    </p>
-                    <p className="bg-textbg py-1 px-3 rounded-full">
-                      Tailwind Css
-                    </p>
-                    <p className="bg-textbg py-1 px-3 rounded-full">React</p>
-                  </div>
-                  <div>
-                    <Link
-                      to="#"
-                      className="text-text inline-flex items-center hover:underline"
-                    >
-                      View Project
-                      <span className="ml-1">
-                        <IoIosArrowRoundForward />
-                      </span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="image4">
-                <img
-                  src="/project.png"
-                  alt=""
-                  className=" rounded-tr-[60px] rounded-tl-[60px]"
-                />
-                <div className="bg-white p-4 rounded-b-2xl rounded-bl-2xl">
-                  <h6 className="text-[20px] font-bold font-poppins">
-                    kraft project
-                  </h6>
-                  <p className="text-base font-normal font-poppins mt-3">
-                    A creative studio Product website and home page
-                  </p>
-                  <div className="flex text-[12px] text-text mt-7 gap-2 mb-4">
-                    <p className="bg-textbg py-1 px-3 rounded-full">
-                      HTML & CSS
-                    </p>
-                    <p className="bg-textbg py-1 px-3 rounded-full">
-                      Tailwind Css
-                    </p>
-                    <p className="bg-textbg py-1 px-3 rounded-full">React</p>
-                  </div>
-                  <div>
-                    <Link
-                      to="#"
-                      className="text-text inline-flex items-center hover:underline"
-                    >
-                      View Project
-                      <span className="ml-1">
-                        <IoIosArrowRoundForward />
-                      </span>
-                    </Link>
-                  </div>
-                </div>
-              </div>  
-              <div className="image4 pb-4">
-                <img
-                  src="/project.png"
-                  alt=""
-                  className=" rounded-tr-[60px] rounded-tl-[60px]"
-                />
-                <div className="bg-white p-4 rounded-b-2xl rounded-bl-2xl">
-                  <h6 className="text-[20px] font-bold font-poppins">
-                    kraft project
-                  </h6>
-                  <p className="text-base font-normal font-poppins mt-3">
-                    A creative studio Product website and home page
-                  </p>
-                  <div className="flex text-[12px] text-text mt-7 gap-2 mb-4">
-                    <p className="bg-textbg py-1 px-3 rounded-full">
-                      HTML & CSS
-                    </p>
-                    <p className="bg-textbg py-1 px-3 rounded-full">
-                      Tailwind Css
-                    </p>
-                    <p className="bg-textbg py-1 px-3 rounded-full">React</p>
-                  </div>
-                  <div>
-                    <Link
-                      to="#"
-                      className="text-text inline-flex items-center hover:underline"
-                    >
-                      View Project
-                      <span className="ml-1">
-                        <IoIosArrowRoundForward />
-                      </span>
-                    </Link>
-                  </div>
+                <div>
+                  <Link
+                    to="#"
+                    className="text-text inline-flex items-center hover:underline"
+                  >
+                    View Project
+                    <span className="ml-1">
+                      <IoIosArrowRoundForward />
+                    </span>
+                  </Link>
                 </div>
               </div>
             </div>
+            <div className="image4">
+              <img
+                src="/project.png"
+                alt=""
+                className="rounded-tr-[60px] rounded-tl-[60px]"
+              />
+              <div className="bg-white p-4 rounded-b-2xl rounded-bl-2xl">
+                <h6 className="text-[20px] font-bold font-poppins">
+                  kraft project
+                </h6>
+                <p className="text-base font-normal font-poppins mt-3">
+                  A creative studio Product website and home page
+                </p>
+                <div className="flex text-[12px] text-text mt-7 gap-2 mb-4">
+                  <p className="bg-textbg py-1 px-3 rounded-full">HTML & CSS</p>
+                  <p className="bg-textbg py-1 px-3 rounded-full">
+                    Tailwind Css
+                  </p>
+                  <p className="bg-textbg py-1 px-3 rounded-full">React</p>
+                </div>
+                <div>
+                  <Link
+                    to="#"
+                    className="text-text inline-flex items-center hover:underline"
+                  >
+                    View Project
+                    <span className="ml-1">
+                      <IoIosArrowRoundForward />
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="image4">
+              <img
+                src="/project.png"
+                alt=""
+                className=" rounded-tr-[60px] rounded-tl-[60px]"
+              />
+              <div className="bg-white p-4 rounded-b-2xl rounded-bl-2xl">
+                <h6 className="text-[20px] font-bold font-poppins">
+                  kraft project
+                </h6>
+                <p className="text-base font-normal font-poppins mt-3">
+                  A creative studio Product website and home page
+                </p>
+                <div className="flex text-[12px] text-text mt-7 gap-2 mb-4">
+                  <p className="bg-textbg py-1 px-3 rounded-full">HTML & CSS</p>
+                  <p className="bg-textbg py-1 px-3 rounded-full">
+                    Tailwind Css
+                  </p>
+                  <p className="bg-textbg py-1 px-3 rounded-full">React</p>
+                </div>
+                <div>
+                  <Link
+                    to="#"
+                    className="text-text inline-flex items-center hover:underline"
+                  >
+                    View Project
+                    <span className="ml-1">
+                      <IoIosArrowRoundForward />
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="image4 pb-4">
+              <img
+                src="/project.png"
+                alt=""
+                className=" rounded-tr-[60px] rounded-tl-[60px]"
+              />
+              <div className="bg-white p-4 rounded-b-2xl rounded-bl-2xl">
+                <h6 className="text-[20px] font-bold font-poppins">
+                  kraft project
+                </h6>
+                <p className="text-base font-normal font-poppins mt-3">
+                  A creative studio Product website and home page
+                </p>
+                <div className="flex text-[12px] text-text mt-7 gap-2 mb-4">
+                  <p className="bg-textbg py-1 px-3 rounded-full">HTML & CSS</p>
+                  <p className="bg-textbg py-1 px-3 rounded-full">
+                    Tailwind Css
+                  </p>
+                  <p className="bg-textbg py-1 px-3 rounded-full">React</p>
+                </div>
+                <div>
+                  <Link
+                    to="#"
+                    className="text-text inline-flex items-center hover:underline"
+                  >
+                    View Project
+                    <span className="ml-1">
+                      <IoIosArrowRoundForward />
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       {/* Project end */}
 
       {/* Skill start */}
-      <section id="Skill" className="sm:px-[60px] px-4"> 
+      <section id="Skill" className="sm:px-[60px] px-4">
         <div className="container m-auto mb-20">
           <h3 className="text-3xl font-bold font-poppins text-center mt-[75px] mb-[60px]">
             Skills & Expertise
           </h3>
-            <div className="gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              <div className="bg-skill p-6 w-full">
-                <span className=" text-text text-[30px]">
-                  <FaCode />
-                </span>
-                <p className="font-poppins text-xl font-bold mt-4 mb-4">
-                  Frontend Development
-                </p>
-                <div className="font-poppins text-[16px] text-p">
-                  <p>HTML5 & CSS3</p>
-                  <p>JAVASCRIPT (ES6+)</p>
-                  <p>React.js</p>
-                  <p>Tailwind CSS</p>
-                </div>
-              </div>
-              <div className="bg-skill p-6 w-full">
-                <span className=" text-text text-[30px]">
-                  <FaTools />
-                </span>
-                <p className="font-poppins text-xl font-bold mt-4 mb-4">
-                  Tools & Others
-                </p>
-                <div className="font-poppins text-[16px] text-p">
-                  <p>Git & GitHub</p>
-                  <p>Docker</p>
-                  <p>AWS</p>
-                  <p>CI/CD</p>
-                  <p>Agile/Scrum</p>
-                </div>
+          <div className="gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="bg-skill p-6 w-full">
+              <span className=" text-text text-[30px]">
+                <FaCode />
+              </span>
+              <p className="font-poppins text-xl font-bold mt-4 mb-4">
+                Frontend Development
+              </p>
+              <div className="font-poppins text-[16px] text-p">
+                <p>HTML5 & CSS3</p>
+                <p>JAVASCRIPT (ES6+)</p>
+                <p>React.js</p>
+                <p>Tailwind CSS</p>
               </div>
             </div>
+            <div className="bg-skill p-6 w-full">
+              <span className=" text-text text-[30px]">
+                <FaTools />
+              </span>
+              <p className="font-poppins text-xl font-bold mt-4 mb-4">
+                Tools & Others
+              </p>
+              <div className="font-poppins text-[16px] text-p">
+                <p>Git & GitHub</p>
+                <p>Docker</p>
+                <p>AWS</p>
+                <p>CI/CD</p>
+                <p>Agile/Scrum</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       {/* Skill end */}
@@ -392,8 +432,8 @@ const Singlepage = () => {
 
       {/* Footer start */}
       <footer className="bg-footer py-16">
-        <div className="container m-auto justify-between grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          <div>
+        <div className="container m-auto md:flex md:justify-between grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="mb-6 md:mb-0 text-center md:text-left">
             <Link to="/" className="font-poppins font-bold text-2xl text-white">
               SSMuhit
             </Link>
@@ -403,7 +443,7 @@ const Singlepage = () => {
             </p>
           </div>
           <div>
-            <div className="flex gap-6 text-2xl text-white justify-end">
+            <div className="flex gap-6 text-2xl text-white lg:justify-end justify-center">
               <Link target="_blank" to="https://github.com/SadmanMuhit">
                 <FaGithub />
               </Link>
@@ -417,10 +457,10 @@ const Singlepage = () => {
                 <BsTwitterX />
               </Link>
               <Link target="_blank" to="https://x.com/sadman_muhit">
-              <FaInstagram />
+                <FaInstagram />
               </Link>
             </div>
-            <p className="font-poppins font-normal text-base text-textfooter mt-6">
+            <p className="font-poppins font-normal text-base text-textfooter mt-6 text-center">
               © 2025 James.dev. All rights reserved.
             </p>
           </div>
