@@ -10,6 +10,16 @@ import { FaBars } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
 import { HashLink as Link } from "react-router-hash-link";
 const Singlepage = () => {
+  function toggleMenu() {   
+    const menu = document.getElementById('menu');
+    const menubtn = document.getElementById('menubtn');
+    const iconshow = document.getElementById('icon-show');
+    const iconclose = document.getElementById('icon-close');
+    
+    menu.classList.toggle('hidden');
+    iconshow.classList.toggle('hidden');
+    iconclose.classList.toggle('hidden');
+}
   return (
     <>
       {/* Navbar start */}
